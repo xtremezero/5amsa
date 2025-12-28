@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5amsa Style</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* 1. Background styling */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* The specific off-white/beige color from the image */
+            background-color: #f7f7f5;
+            font-family: 'Rubik', sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            padding: 2rem;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        /* 2. The Title "5amsa" styling */
+        h1 {
+            /* The blocky font */
+            font-family: 'Lalezar', cursive;
+            font-size: 5rem; /* Large size */
+            margin: 0 0 1rem 0;
+            color: #2b2826; /* Dark brown/black text */
+            line-height: 1;
+        }
+
+        /* Optional: Subtitle styling to capture the vibe of the text in the image */
+        p.subtitle {
+            color: #555;
+            font-size: 1rem;
+            margin-bottom: 2.5rem;
+            line-height: 1.6;
+            direction: rtl; /* Right-to-left for Arabic reading flow */
+        }
+        
+        /* Highlight colors based on the image text */
+        .highlight-orange { color: #e6a32e; font-weight: bold; }
+        .highlight-red { color: #f05d5e; font-weight: bold; }
+
+        /* 3. Button Group Styling */
+        .button-group {
+            display: flex;
+            flex-direction: column; /* Stacked looks good with this chunky style, or remove for row */
+            gap: 1rem;
+            align-items: center;
+        }
+
+        /* 4. The Button Styling (Dark pill shape) */
+        .btn {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 220px;
+            padding: 14px 20px;
+            
+            /* Dark Background */
+            background-color: #2e2b2b;
+            color: #ffffff;
+            
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 12px; /* Soft rounded corners */
+            
+            /* Font settings */
+            font-family: 'Rubik', sans-serif; /* Clean font for buttons */
+            font-weight: 700;
+            
+            /* Shadow to match the depth in the image */
+            box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+            transition: transform 0.1s ease, box-shadow 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: #423d3d; /* Slightly lighter on hover */
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>5amsa (خمسة)</h1>
+
+        <p class="subtitle">
+            اختر <span class="highlight-orange">لغتك</span> المفضلة<br>
+            Select your  <span class="highlight-red">language</span>
+        </p>
+
+        <div class="button-group">
+            <a href="game_en.html" class="btn" target="_self">English</a>
+            <a href="game_ar.html" class="btn" target="_self">عربي</a>
+        </div>
+    </div>
+
+</body>
+</html>
